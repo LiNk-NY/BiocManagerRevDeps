@@ -1,36 +1,3 @@
-# affylmGUI
-
-<details>
-
-* Version: 
-* GitHub: https://github.com/Bioconductor/BiocManager
-* Source code: NA
-* Number of recursive dependencies: 0
-
-</details>
-
-## Error before installation
-
-### Devel
-
-```
-
-
-
-
-
-
-```
-### CRAN
-
-```
-
-
-
-
-
-
-```
 # annaffy
 
 <details>
@@ -149,17 +116,7 @@
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  cannot open URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/OrganismDbi_1.33.0.tar.gz'
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/OrganismDbi_1.33.0.tar.gz': status was 'SSL connect error'
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/OrganismDbi_1.33.0.tar.gz': status was 'SSL connect error'
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘OrganismDbi’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘OrganismDbi’ failed
+
 
 
 ```
@@ -169,17 +126,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  cannot open URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/OrganismDbi_1.33.0.tar.gz'
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/OrganismDbi_1.33.0.tar.gz': status was 'SSL connect error'
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/OrganismDbi_1.33.0.tar.gz': status was 'SSL connect error'
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘OrganismDbi’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘OrganismDbi’ failed
+
 
 
 ```
@@ -257,7 +204,7 @@ Run `revdep_details(, "AnVILPublish")` for more info
 ** inst
 ** byte-compile and prepare package for lazy loading
 Error in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]) : 
-  there is no package called 'utf8'
+  there is no package called 'knitr'
 Calls: <Anonymous> ... loadNamespace -> withRestarts -> withOneRestart -> doWithOneRestart
 Execution halted
 ERROR: lazy loading failed for package 'AnVILPublish'
@@ -274,7 +221,7 @@ ERROR: lazy loading failed for package 'AnVILPublish'
 ** inst
 ** byte-compile and prepare package for lazy loading
 Error in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]) : 
-  there is no package called 'utf8'
+  there is no package called 'knitr'
 Calls: <Anonymous> ... loadNamespace -> withRestarts -> withOneRestart -> doWithOneRestart
 Execution halted
 ERROR: lazy loading failed for package 'AnVILPublish'
@@ -385,32 +332,61 @@ ERROR: lazy loading failed for package 'AnVILPublish'
 
 <details>
 
-* Version: 
-* GitHub: https://github.com/Bioconductor/BiocManager
-* Source code: NA
-* Number of recursive dependencies: 0
+* Version: 0.4.0
+* GitHub: NA
+* Source code: https://github.com/cran/bbl
+* Date/Publication: 2021-02-03 05:20:02 UTC
+* Number of recursive dependencies: 20
+
+Run `revdep_details(, "bbl")` for more info
 
 </details>
 
-## Error before installation
+## In both
+
+*   checking whether package 'bbl' can be installed ... ERROR
+    ```
+    Installation failed.
+    See '/mnt/STORE1/bighome/mramos/bioc/BiocManager/revdep/checks/bbl/new/bbl.Rcheck/00install.out' for details.
+    ```
+
+## Installation
 
 ### Devel
 
 ```
-
-
-
-
+* installing *source* package 'bbl' ...
+** package 'bbl' successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+ccache g++ -std=gnu++14 -I"/mnt/STORE1/bighome/mramos/src/svn/r-release/R/lib/R/include" -DNDEBUG  -I'/mnt/STORE1/bighome/mramos/bioc/BiocManager/revdep/library/bbl/Rcpp/include' -I/usr/local/include   -fpic  -ggdb -pipe -Wall -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++ -std=gnu++14 -I"/mnt/STORE1/bighome/mramos/src/svn/r-release/R/lib/R/include" -DNDEBUG  -I'/mnt/STORE1/bighome/mramos/bioc/BiocManager/revdep/library/bbl/Rcpp/include' -I/usr/local/include   -fpic  -ggdb -pipe -Wall -pedantic  -c bfgs.cpp -o bfgs.o
+bfgs.cpp:5:10: fatal error: gsl/gsl_math.h: No such file or directory
+    5 | #include <gsl/gsl_math.h>
+      |          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [/mnt/STORE1/bighome/mramos/src/svn/r-release/R/lib/R/etc/Makeconf:177: bfgs.o] Error 1
+ERROR: compilation failed for package 'bbl'
+* removing '/mnt/STORE1/bighome/mramos/bioc/BiocManager/revdep/checks/bbl/new/bbl.Rcheck/bbl'
 
 
 ```
 ### CRAN
 
 ```
-
-
-
-
+* installing *source* package 'bbl' ...
+** package 'bbl' successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+ccache g++ -std=gnu++14 -I"/mnt/STORE1/bighome/mramos/src/svn/r-release/R/lib/R/include" -DNDEBUG  -I'/mnt/STORE1/bighome/mramos/bioc/BiocManager/revdep/library/bbl/Rcpp/include' -I/usr/local/include   -fpic  -ggdb -pipe -Wall -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++ -std=gnu++14 -I"/mnt/STORE1/bighome/mramos/src/svn/r-release/R/lib/R/include" -DNDEBUG  -I'/mnt/STORE1/bighome/mramos/bioc/BiocManager/revdep/library/bbl/Rcpp/include' -I/usr/local/include   -fpic  -ggdb -pipe -Wall -pedantic  -c bfgs.cpp -o bfgs.o
+bfgs.cpp:5:10: fatal error: gsl/gsl_math.h: No such file or directory
+    5 | #include <gsl/gsl_math.h>
+      |          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [/mnt/STORE1/bighome/mramos/src/svn/r-release/R/lib/R/etc/Makeconf:177: bfgs.o] Error 1
+ERROR: compilation failed for package 'bbl'
+* removing '/mnt/STORE1/bighome/mramos/bioc/BiocManager/revdep/checks/bbl/old/bbl.Rcheck/bbl'
 
 
 ```
@@ -536,15 +512,15 @@ Error in download.file(url, destfile, method, mode = "wb", ...) :
   download from 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg38_1.4.3.tar.gz' failed
 In addition: Warning messages:
 1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 232725682 != reported length 721596676
+  downloaded length 357816009 != reported length 721596676
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 232725682 != reported length 721596676
+  downloaded length 357816009 != reported length 721596676
 3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg38_1.4.3.tar.gz': status was 'Failure when receiving data from the peer'
+  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg38_1.4.3.tar.gz': Timeout of 60 seconds was reached
 4: In download.file(url, destfile, method, mode = "wb", ...) :
 ...
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 886816517 != reported length 898581361
+  downloaded length 410274897 != reported length 898581361
 3: In download.file(url, destfile, method, mode = "wb", ...) :
   URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/SNPlocs.Hsapiens.dbSNP144.GRCh38_0.99.20.tar.gz': Timeout of 60 seconds was reached
 4: In download.file(url, destfile, method, mode = "wb", ...) :
@@ -566,15 +542,15 @@ Error in download.file(url, destfile, method, mode = "wb", ...) :
   download from 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg38_1.4.3.tar.gz' failed
 In addition: Warning messages:
 1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 232725682 != reported length 721596676
+  downloaded length 357816009 != reported length 721596676
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 232725682 != reported length 721596676
+  downloaded length 357816009 != reported length 721596676
 3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg38_1.4.3.tar.gz': status was 'Failure when receiving data from the peer'
+  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg38_1.4.3.tar.gz': Timeout of 60 seconds was reached
 4: In download.file(url, destfile, method, mode = "wb", ...) :
 ...
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 886816517 != reported length 898581361
+  downloaded length 410274897 != reported length 898581361
 3: In download.file(url, destfile, method, mode = "wb", ...) :
   URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/SNPlocs.Hsapiens.dbSNP144.GRCh38_0.99.20.tar.gz': Timeout of 60 seconds was reached
 4: In download.file(url, destfile, method, mode = "wb", ...) :
@@ -609,9 +585,9 @@ Error in download.file(url, destfile, method, mode = "wb", ...) :
   download from 'https://bioconductor.org/packages/3.13/data/experiment/src/contrib/ccdata_1.17.0.tar.gz' failed
 In addition: Warning messages:
 1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 731343714 != reported length 937343838
+  downloaded length 916373565 != reported length 937343838
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 731343714 != reported length 937343838
+  downloaded length 916373565 != reported length 937343838
 3: In download.file(url, destfile, method, mode = "wb", ...) :
   URL 'https://bioconductor.org/packages/3.13/data/experiment/src/contrib/ccdata_1.17.0.tar.gz': Timeout of 60 seconds was reached
 4: In download.file(url, destfile, method, mode = "wb", ...) :
@@ -633,9 +609,9 @@ Error in download.file(url, destfile, method, mode = "wb", ...) :
   download from 'https://bioconductor.org/packages/3.13/data/experiment/src/contrib/ccdata_1.17.0.tar.gz' failed
 In addition: Warning messages:
 1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 731343714 != reported length 937343838
+  downloaded length 916373565 != reported length 937343838
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 731343714 != reported length 937343838
+  downloaded length 916373565 != reported length 937343838
 3: In download.file(url, destfile, method, mode = "wb", ...) :
   URL 'https://bioconductor.org/packages/3.13/data/experiment/src/contrib/ccdata_1.17.0.tar.gz': Timeout of 60 seconds was reached
 4: In download.file(url, destfile, method, mode = "wb", ...) :
@@ -798,21 +774,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/ChemmineDrugs_1.0.2.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 24222981 != reported length 45869833
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 24222981 != reported length 45869833
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/ChemmineDrugs_1.0.2.tar.gz': Timeout of 60 seconds was reached
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/ChemmineDrugs_1.0.2.tar.gz': Timeout of 60 seconds was reached
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘ChemmineDrugs’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘ChemmineDrugs’ failed
+
 
 
 ```
@@ -822,21 +784,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/ChemmineDrugs_1.0.2.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 24222981 != reported length 45869833
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 24222981 != reported length 45869833
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/ChemmineDrugs_1.0.2.tar.gz': Timeout of 60 seconds was reached
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/ChemmineDrugs_1.0.2.tar.gz': Timeout of 60 seconds was reached
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘ChemmineDrugs’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘ChemmineDrugs’ failed
+
 
 
 ```
@@ -893,26 +841,26 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/bioc/src/contrib/BSgenome_1.59.4.tar.gz' failed
+  download from 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz' failed
 In addition: Warning messages:
 1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 2209264 != reported length 6048937
+  downloaded length 3499557 != reported length 710245413
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 2209264 != reported length 6048937
+  downloaded length 3499557 != reported length 710245413
 3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/BSgenome_1.59.4.tar.gz': status was 'Failure when receiving data from the peer'
+  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz': status was 'Failure when receiving data from the peer'
 4: In download.file(url, destfile, method, mode = "wb", ...) :
 ...
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 41663839 != reported length 76035973
+  downloaded length 42045152 != reported length 417224954
 3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/EnsDb.Hsapiens.v79_2.99.0.tar.gz': Timeout of 60 seconds was reached
+  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/reactome.db_1.76.0.tar.gz': status was 'Failure when receiving data from the peer'
 4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/EnsDb.Hsapiens.v79_2.99.0.tar.gz': Timeout of 60 seconds was reached
+  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/reactome.db_1.76.0.tar.gz': status was 'Failure when receiving data from the peer'
 Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘EnsDb.Hsapiens.v79’ failed
+  download of package ‘reactome.db’ failed
 Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘EnsDb.Hsapiens.v79’ failed
+  download of package ‘reactome.db’ failed
 
 
 ```
@@ -923,26 +871,26 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/bioc/src/contrib/BSgenome_1.59.4.tar.gz' failed
+  download from 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz' failed
 In addition: Warning messages:
 1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 2209264 != reported length 6048937
+  downloaded length 3499557 != reported length 710245413
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 2209264 != reported length 6048937
+  downloaded length 3499557 != reported length 710245413
 3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/BSgenome_1.59.4.tar.gz': status was 'Failure when receiving data from the peer'
+  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz': status was 'Failure when receiving data from the peer'
 4: In download.file(url, destfile, method, mode = "wb", ...) :
 ...
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 41663839 != reported length 76035973
+  downloaded length 42045152 != reported length 417224954
 3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/EnsDb.Hsapiens.v79_2.99.0.tar.gz': Timeout of 60 seconds was reached
+  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/reactome.db_1.76.0.tar.gz': status was 'Failure when receiving data from the peer'
 4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/EnsDb.Hsapiens.v79_2.99.0.tar.gz': Timeout of 60 seconds was reached
+  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/reactome.db_1.76.0.tar.gz': status was 'Failure when receiving data from the peer'
 Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘EnsDb.Hsapiens.v79’ failed
+  download of package ‘reactome.db’ failed
 Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘EnsDb.Hsapiens.v79’ failed
+  download of package ‘reactome.db’ failed
 
 
 ```
@@ -966,26 +914,26 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/bioc/src/contrib/Biostrings_2.59.3.tar.gz' failed
+  download from 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz' failed
 In addition: Warning messages:
 1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 5239289 != reported length 12644754
+  downloaded length 217660541 != reported length 710245413
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 5239289 != reported length 12644754
+  downloaded length 217660541 != reported length 710245413
 3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/Biostrings_2.59.3.tar.gz': status was 'Failure when receiving data from the peer'
+  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz': Timeout of 60 seconds was reached
 4: In download.file(url, destfile, method, mode = "wb", ...) :
 ...
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 284997936 != reported length 621955864
+  downloaded length 620467298 != reported length 629306686
 3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Mmusculus.UCSC.mm9_1.4.0.tar.gz': Timeout of 60 seconds was reached
+  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Mmusculus.UCSC.mm10_1.4.0.tar.gz': Timeout of 60 seconds was reached
 4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Mmusculus.UCSC.mm9_1.4.0.tar.gz': Timeout of 60 seconds was reached
+  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Mmusculus.UCSC.mm10_1.4.0.tar.gz': Timeout of 60 seconds was reached
 Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘BSgenome.Mmusculus.UCSC.mm9’ failed
+  download of package ‘BSgenome.Mmusculus.UCSC.mm10’ failed
 Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘BSgenome.Mmusculus.UCSC.mm9’ failed
+  download of package ‘BSgenome.Mmusculus.UCSC.mm10’ failed
 
 
 ```
@@ -996,26 +944,26 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/bioc/src/contrib/Biostrings_2.59.3.tar.gz' failed
+  download from 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz' failed
 In addition: Warning messages:
 1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 5239289 != reported length 12644754
+  downloaded length 217660541 != reported length 710245413
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 5239289 != reported length 12644754
+  downloaded length 217660541 != reported length 710245413
 3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/Biostrings_2.59.3.tar.gz': status was 'Failure when receiving data from the peer'
+  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz': Timeout of 60 seconds was reached
 4: In download.file(url, destfile, method, mode = "wb", ...) :
 ...
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 284997936 != reported length 621955864
+  downloaded length 620467298 != reported length 629306686
 3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Mmusculus.UCSC.mm9_1.4.0.tar.gz': Timeout of 60 seconds was reached
+  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Mmusculus.UCSC.mm10_1.4.0.tar.gz': Timeout of 60 seconds was reached
 4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Mmusculus.UCSC.mm9_1.4.0.tar.gz': Timeout of 60 seconds was reached
+  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Mmusculus.UCSC.mm10_1.4.0.tar.gz': Timeout of 60 seconds was reached
 Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘BSgenome.Mmusculus.UCSC.mm9’ failed
+  download of package ‘BSgenome.Mmusculus.UCSC.mm10’ failed
 Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘BSgenome.Mmusculus.UCSC.mm9’ failed
+  download of package ‘BSgenome.Mmusculus.UCSC.mm10’ failed
 
 
 ```
@@ -1072,18 +1020,12 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/bioc/src/contrib/BSgenome_1.59.4.tar.gz' failed
+  download from 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz' failed
 In addition: Warning messages:
 1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 848456 != reported length 6048937
+  downloaded length 412846502 != reported length 710245413
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 848456 != reported length 6048937
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/BSgenome_1.59.4.tar.gz': status was 'Failure when receiving data from the peer'
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-...
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 421119466 != reported length 710245413
+  downloaded length 412846502 != reported length 710245413
 3: In download.file(url, destfile, method, mode = "wb", ...) :
   URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz': Timeout of 60 seconds was reached
 4: In download.file(url, destfile, method, mode = "wb", ...) :
@@ -1102,18 +1044,12 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/bioc/src/contrib/BSgenome_1.59.4.tar.gz' failed
+  download from 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz' failed
 In addition: Warning messages:
 1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 848456 != reported length 6048937
+  downloaded length 412846502 != reported length 710245413
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 848456 != reported length 6048937
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/BSgenome_1.59.4.tar.gz': status was 'Failure when receiving data from the peer'
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-...
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 421119466 != reported length 710245413
+  downloaded length 412846502 != reported length 710245413
 3: In download.file(url, destfile, method, mode = "wb", ...) :
   URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz': Timeout of 60 seconds was reached
 4: In download.file(url, destfile, method, mode = "wb", ...) :
@@ -1144,21 +1080,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/reactome.db_1.76.0.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 70622672 != reported length 417224954
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 70622672 != reported length 417224954
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/reactome.db_1.76.0.tar.gz': Timeout of 60 seconds was reached
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/reactome.db_1.76.0.tar.gz': Timeout of 60 seconds was reached
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘reactome.db’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘reactome.db’ failed
+
 
 
 ```
@@ -1168,21 +1090,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/reactome.db_1.76.0.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 70622672 != reported length 417224954
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 70622672 != reported length 417224954
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/reactome.db_1.76.0.tar.gz': Timeout of 60 seconds was reached
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/reactome.db_1.76.0.tar.gz': Timeout of 60 seconds was reached
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘reactome.db’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘reactome.db’ failed
+
 
 
 ```
@@ -1205,21 +1113,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/bioc/src/contrib/ChIPpeakAnno_3.25.4.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 4979624 != reported length 19507254
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 4979624 != reported length 19507254
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/ChIPpeakAnno_3.25.4.tar.gz': status was 'Failure when receiving data from the peer'
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/ChIPpeakAnno_3.25.4.tar.gz': status was 'Failure when receiving data from the peer'
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘ChIPpeakAnno’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘ChIPpeakAnno’ failed
+
 
 
 ```
@@ -1229,21 +1123,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/bioc/src/contrib/ChIPpeakAnno_3.25.4.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 4979624 != reported length 19507254
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 4979624 != reported length 19507254
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/ChIPpeakAnno_3.25.4.tar.gz': status was 'Failure when receiving data from the peer'
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/ChIPpeakAnno_3.25.4.tar.gz': status was 'Failure when receiving data from the peer'
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘ChIPpeakAnno’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘ChIPpeakAnno’ failed
+
 
 
 ```
@@ -1266,21 +1146,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/bioc/src/contrib/Biostrings_2.59.3.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 9305635 != reported length 12644754
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 9305635 != reported length 12644754
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/Biostrings_2.59.3.tar.gz': status was 'Failure when receiving data from the peer'
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/Biostrings_2.59.3.tar.gz': status was 'Failure when receiving data from the peer'
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘Biostrings’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘Biostrings’ failed
+
 
 
 ```
@@ -1290,21 +1156,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/bioc/src/contrib/Biostrings_2.59.3.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 9305635 != reported length 12644754
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 9305635 != reported length 12644754
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/Biostrings_2.59.3.tar.gz': status was 'Failure when receiving data from the peer'
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/Biostrings_2.59.3.tar.gz': status was 'Failure when receiving data from the peer'
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘Biostrings’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘Biostrings’ failed
+
 
 
 ```
@@ -1360,21 +1212,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/bioc/src/contrib/Biostrings_2.59.3.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 3058777 != reported length 12644754
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 3058777 != reported length 12644754
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/Biostrings_2.59.3.tar.gz': status was 'Failure when receiving data from the peer'
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/Biostrings_2.59.3.tar.gz': status was 'Failure when receiving data from the peer'
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘Biostrings’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘Biostrings’ failed
+
 
 
 ```
@@ -1384,21 +1222,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/bioc/src/contrib/Biostrings_2.59.3.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 3058777 != reported length 12644754
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 3058777 != reported length 12644754
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/Biostrings_2.59.3.tar.gz': status was 'Failure when receiving data from the peer'
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/Biostrings_2.59.3.tar.gz': status was 'Failure when receiving data from the peer'
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘Biostrings’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘Biostrings’ failed
+
 
 
 ```
@@ -1421,21 +1245,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/bioc/src/contrib/Biostrings_2.59.3.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 8633225 != reported length 12644754
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 8633225 != reported length 12644754
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/Biostrings_2.59.3.tar.gz': status was 'Failure when receiving data from the peer'
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/Biostrings_2.59.3.tar.gz': status was 'Failure when receiving data from the peer'
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘Biostrings’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘Biostrings’ failed
+
 
 
 ```
@@ -1445,21 +1255,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/bioc/src/contrib/Biostrings_2.59.3.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 8633225 != reported length 12644754
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 8633225 != reported length 12644754
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/Biostrings_2.59.3.tar.gz': status was 'Failure when receiving data from the peer'
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/Biostrings_2.59.3.tar.gz': status was 'Failure when receiving data from the peer'
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘Biostrings’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘Biostrings’ failed
+
 
 
 ```
@@ -1482,7 +1278,21 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-
+Error in download.file(url, destfile, method, mode = "wb", ...) : 
+  download from 'https://bioconductor.org/packages/3.13/data/experiment/src/contrib/tximportData_1.19.1.tar.gz' failed
+In addition: Warning messages:
+1: In download.file(url, destfile, method, mode = "wb", ...) :
+  downloaded length 291518214 != reported length 426788382
+2: In download.file(url, destfile, method, mode = "wb", ...) :
+  downloaded length 291518214 != reported length 426788382
+3: In download.file(url, destfile, method, mode = "wb", ...) :
+  URL 'https://bioconductor.org/packages/3.13/data/experiment/src/contrib/tximportData_1.19.1.tar.gz': Timeout of 60 seconds was reached
+4: In download.file(url, destfile, method, mode = "wb", ...) :
+  URL 'https://bioconductor.org/packages/3.13/data/experiment/src/contrib/tximportData_1.19.1.tar.gz': Timeout of 60 seconds was reached
+Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
+  download of package ‘tximportData’ failed
+Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
+  download of package ‘tximportData’ failed
 
 
 ```
@@ -1492,7 +1302,21 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-
+Error in download.file(url, destfile, method, mode = "wb", ...) : 
+  download from 'https://bioconductor.org/packages/3.13/data/experiment/src/contrib/tximportData_1.19.1.tar.gz' failed
+In addition: Warning messages:
+1: In download.file(url, destfile, method, mode = "wb", ...) :
+  downloaded length 291518214 != reported length 426788382
+2: In download.file(url, destfile, method, mode = "wb", ...) :
+  downloaded length 291518214 != reported length 426788382
+3: In download.file(url, destfile, method, mode = "wb", ...) :
+  URL 'https://bioconductor.org/packages/3.13/data/experiment/src/contrib/tximportData_1.19.1.tar.gz': Timeout of 60 seconds was reached
+4: In download.file(url, destfile, method, mode = "wb", ...) :
+  URL 'https://bioconductor.org/packages/3.13/data/experiment/src/contrib/tximportData_1.19.1.tar.gz': Timeout of 60 seconds was reached
+Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
+  download of package ‘tximportData’ failed
+Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
+  download of package ‘tximportData’ failed
 
 
 ```
@@ -1566,63 +1390,36 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 <details>
 
-* Version: 
-* GitHub: https://github.com/Bioconductor/BiocManager
-* Source code: NA
-* Number of recursive dependencies: 0
+* Version: 1.13.0
+* GitHub: https://github.com/christpa/DMRScan
+* Source code: https://github.com/cran/DMRScan
+* Date/Publication: 2021-03-19
+* Number of recursive dependencies: 37
+
+Run `revdep_details(, "DMRScan")` for more info
 
 </details>
 
-## Error before installation
+## In both
 
-### Devel
+*   R CMD check timed out
+    
 
-```
+*   checking package dependencies ... WARNING
+    ```
+    Skipping vignette re-building
+    Package suggested but not available for checking: 'knitr'
+    
+    VignetteBuilder package required for checking but not installed: 'knitr'
+    ```
 
+*   checking installed package size ... NOTE
+    ```
+      installed size is  5.7Mb
+      sub-directories of 1Mb or more:
+        data   4.9Mb
+    ```
 
-
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/GenomeInfoDbData_1.2.5.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 2539042 != reported length 10959165
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 2539042 != reported length 10959165
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/GenomeInfoDbData_1.2.5.tar.gz': status was 'Failure when receiving data from the peer'
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/GenomeInfoDbData_1.2.5.tar.gz': status was 'Failure when receiving data from the peer'
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘GenomeInfoDbData’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘GenomeInfoDbData’ failed
-
-
-```
-### CRAN
-
-```
-
-
-
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/GenomeInfoDbData_1.2.5.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 2539042 != reported length 10959165
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 2539042 != reported length 10959165
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/GenomeInfoDbData_1.2.5.tar.gz': status was 'Failure when receiving data from the peer'
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/GenomeInfoDbData_1.2.5.tar.gz': status was 'Failure when receiving data from the peer'
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘GenomeInfoDbData’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘GenomeInfoDbData’ failed
-
-
-```
 # EDASeq
 
 <details>
@@ -1675,21 +1472,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/data/experiment/src/contrib/ALL_1.33.0.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 451317 != reported length 11401920
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 451317 != reported length 11401920
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/experiment/src/contrib/ALL_1.33.0.tar.gz': status was 'Failure when receiving data from the peer'
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/experiment/src/contrib/ALL_1.33.0.tar.gz': status was 'Failure when receiving data from the peer'
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘ALL’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘ALL’ failed
+
 
 
 ```
@@ -1699,21 +1482,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/data/experiment/src/contrib/ALL_1.33.0.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 451317 != reported length 11401920
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 451317 != reported length 11401920
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/experiment/src/contrib/ALL_1.33.0.tar.gz': status was 'Failure when receiving data from the peer'
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/experiment/src/contrib/ALL_1.33.0.tar.gz': status was 'Failure when receiving data from the peer'
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘ALL’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘ALL’ failed
+
 
 
 ```
@@ -1737,26 +1506,26 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/bioc/src/contrib/biomaRt_2.47.9.tar.gz' failed
+  download from 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz' failed
 In addition: Warning messages:
 1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 81445 != reported length 667550
+  downloaded length 407304181 != reported length 710245413
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 81445 != reported length 667550
+  downloaded length 407304181 != reported length 710245413
 3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/biomaRt_2.47.9.tar.gz': status was 'Failure when receiving data from the peer'
+  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz': Timeout of 60 seconds was reached
 4: In download.file(url, destfile, method, mode = "wb", ...) :
 ...
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 553756749 != reported length 710245413
+  downloaded length 1636680 != reported length 6339128
 3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz': Timeout of 60 seconds was reached
+  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/DOSE_3.17.2.tar.gz': status was 'Failure when receiving data from the peer'
 4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz': Timeout of 60 seconds was reached
+  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/DOSE_3.17.2.tar.gz': status was 'Failure when receiving data from the peer'
 Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘BSgenome.Hsapiens.UCSC.hg19’ failed
+  download of package ‘DOSE’ failed
 Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘BSgenome.Hsapiens.UCSC.hg19’ failed
+  download of package ‘DOSE’ failed
 
 
 ```
@@ -1767,26 +1536,26 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/bioc/src/contrib/biomaRt_2.47.9.tar.gz' failed
+  download from 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz' failed
 In addition: Warning messages:
 1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 81445 != reported length 667550
+  downloaded length 407304181 != reported length 710245413
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 81445 != reported length 667550
+  downloaded length 407304181 != reported length 710245413
 3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/biomaRt_2.47.9.tar.gz': status was 'Failure when receiving data from the peer'
+  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz': Timeout of 60 seconds was reached
 4: In download.file(url, destfile, method, mode = "wb", ...) :
 ...
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 553756749 != reported length 710245413
+  downloaded length 1636680 != reported length 6339128
 3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz': Timeout of 60 seconds was reached
+  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/DOSE_3.17.2.tar.gz': status was 'Failure when receiving data from the peer'
 4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz': Timeout of 60 seconds was reached
+  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/DOSE_3.17.2.tar.gz': status was 'Failure when receiving data from the peer'
 Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘BSgenome.Hsapiens.UCSC.hg19’ failed
+  download of package ‘DOSE’ failed
 Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘BSgenome.Hsapiens.UCSC.hg19’ failed
+  download of package ‘DOSE’ failed
 
 
 ```
@@ -1809,21 +1578,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/bioc/src/contrib/AnnotationDbi_1.53.1.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 3816995 != reported length 4326844
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 3816995 != reported length 4326844
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/AnnotationDbi_1.53.1.tar.gz': status was 'Failure when receiving data from the peer'
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/AnnotationDbi_1.53.1.tar.gz': status was 'Failure when receiving data from the peer'
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘AnnotationDbi’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘AnnotationDbi’ failed
+
 
 
 ```
@@ -1833,21 +1588,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/bioc/src/contrib/AnnotationDbi_1.53.1.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 3816995 != reported length 4326844
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 3816995 != reported length 4326844
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/AnnotationDbi_1.53.1.tar.gz': status was 'Failure when receiving data from the peer'
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/AnnotationDbi_1.53.1.tar.gz': status was 'Failure when receiving data from the peer'
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘AnnotationDbi’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘AnnotationDbi’ failed
+
 
 
 ```
@@ -1870,21 +1611,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/bioc/src/contrib/Biostrings_2.59.3.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 1639136 != reported length 12644754
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 1639136 != reported length 12644754
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/Biostrings_2.59.3.tar.gz': status was 'Failure when receiving data from the peer'
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/Biostrings_2.59.3.tar.gz': status was 'Failure when receiving data from the peer'
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘Biostrings’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘Biostrings’ failed
+
 
 
 ```
@@ -1894,21 +1621,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/bioc/src/contrib/Biostrings_2.59.3.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 1639136 != reported length 12644754
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 1639136 != reported length 12644754
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/Biostrings_2.59.3.tar.gz': status was 'Failure when receiving data from the peer'
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/Biostrings_2.59.3.tar.gz': status was 'Failure when receiving data from the peer'
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘Biostrings’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘Biostrings’ failed
+
 
 
 ```
@@ -2030,21 +1743,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/bioc/src/contrib/AnnotationDbi_1.53.1.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 3578648 != reported length 4326844
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 3578648 != reported length 4326844
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/AnnotationDbi_1.53.1.tar.gz': status was 'Failure when receiving data from the peer'
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/AnnotationDbi_1.53.1.tar.gz': status was 'Failure when receiving data from the peer'
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘AnnotationDbi’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘AnnotationDbi’ failed
+
 
 
 ```
@@ -2054,21 +1753,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/bioc/src/contrib/AnnotationDbi_1.53.1.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 3578648 != reported length 4326844
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 3578648 != reported length 4326844
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/AnnotationDbi_1.53.1.tar.gz': status was 'Failure when receiving data from the peer'
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/AnnotationDbi_1.53.1.tar.gz': status was 'Failure when receiving data from the peer'
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘AnnotationDbi’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘AnnotationDbi’ failed
+
 
 
 ```
@@ -2092,18 +1777,12 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/bioc/src/contrib/AnnotationDbi_1.53.1.tar.gz' failed
+  download from 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/reactome.db_1.76.0.tar.gz' failed
 In addition: Warning messages:
 1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 1097251 != reported length 4326844
+  downloaded length 386616822 != reported length 417224954
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 1097251 != reported length 4326844
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/AnnotationDbi_1.53.1.tar.gz': Timeout of 60 seconds was reached
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-...
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 406924974 != reported length 417224954
+  downloaded length 386616822 != reported length 417224954
 3: In download.file(url, destfile, method, mode = "wb", ...) :
   URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/reactome.db_1.76.0.tar.gz': Timeout of 60 seconds was reached
 4: In download.file(url, destfile, method, mode = "wb", ...) :
@@ -2122,18 +1801,12 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/bioc/src/contrib/AnnotationDbi_1.53.1.tar.gz' failed
+  download from 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/reactome.db_1.76.0.tar.gz' failed
 In addition: Warning messages:
 1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 1097251 != reported length 4326844
+  downloaded length 386616822 != reported length 417224954
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 1097251 != reported length 4326844
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/AnnotationDbi_1.53.1.tar.gz': Timeout of 60 seconds was reached
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-...
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 406924974 != reported length 417224954
+  downloaded length 386616822 != reported length 417224954
 3: In download.file(url, destfile, method, mode = "wb", ...) :
   URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/reactome.db_1.76.0.tar.gz': Timeout of 60 seconds was reached
 4: In download.file(url, destfile, method, mode = "wb", ...) :
@@ -2146,39 +1819,6 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 ```
 # FieldEffectCrc
-
-<details>
-
-* Version: 
-* GitHub: https://github.com/Bioconductor/BiocManager
-* Source code: NA
-* Number of recursive dependencies: 0
-
-</details>
-
-## Error before installation
-
-### Devel
-
-```
-
-
-
-
-
-
-```
-### CRAN
-
-```
-
-
-
-
-
-
-```
-# gcrma
 
 <details>
 
@@ -2230,21 +1870,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://packagemanager.rstudio.com/cran/__linux__/focal/latest/src/contrib/4.1.0/Recommended/Matrix_1.3-3.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 114206 != reported length 2052538
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 114206 != reported length 2052538
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://rspm-sync.rstudio.com/v3/1/packages/f77ec8de43ae7bfa19dfdc7e76bfefbb21b3223dbc174423fcde70b44cf36a3b.tar.gz': Timeout of 60 seconds was reached
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://rspm-sync.rstudio.com/v3/1/packages/f77ec8de43ae7bfa19dfdc7e76bfefbb21b3223dbc174423fcde70b44cf36a3b.tar.gz': Timeout of 60 seconds was reached
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘Matrix’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘Matrix’ failed
+
 
 
 ```
@@ -2254,21 +1880,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://packagemanager.rstudio.com/cran/__linux__/focal/latest/src/contrib/4.1.0/Recommended/Matrix_1.3-3.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 114206 != reported length 2052538
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 114206 != reported length 2052538
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://rspm-sync.rstudio.com/v3/1/packages/f77ec8de43ae7bfa19dfdc7e76bfefbb21b3223dbc174423fcde70b44cf36a3b.tar.gz': Timeout of 60 seconds was reached
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://rspm-sync.rstudio.com/v3/1/packages/f77ec8de43ae7bfa19dfdc7e76bfefbb21b3223dbc174423fcde70b44cf36a3b.tar.gz': Timeout of 60 seconds was reached
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘Matrix’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘Matrix’ failed
+
 
 
 ```
@@ -2361,23 +1973,23 @@ Error in download.file(url, destfile, method, mode = "wb", ...) :
   download from 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz' failed
 In addition: Warning messages:
 1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 165567252 != reported length 710245413
+  downloaded length 216755517 != reported length 710245413
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 165567252 != reported length 710245413
+  downloaded length 216755517 != reported length 710245413
 3: In download.file(url, destfile, method, mode = "wb", ...) :
   URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz': Timeout of 60 seconds was reached
 4: In download.file(url, destfile, method, mode = "wb", ...) :
 ...
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 406535502 != reported length 913353230
+  downloaded length 267506795 != reported length 1050647519
 3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/SNPlocs.Hsapiens.dbSNP144.GRCh37_0.99.20.tar.gz': Timeout of 60 seconds was reached
+  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/phastCons100way.UCSC.hg19_3.7.2.tar.gz': Timeout of 60 seconds was reached
 4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/SNPlocs.Hsapiens.dbSNP144.GRCh37_0.99.20.tar.gz': Timeout of 60 seconds was reached
+  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/phastCons100way.UCSC.hg19_3.7.2.tar.gz': Timeout of 60 seconds was reached
 Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘SNPlocs.Hsapiens.dbSNP144.GRCh37’ failed
+  download of package ‘phastCons100way.UCSC.hg19’ failed
 Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘SNPlocs.Hsapiens.dbSNP144.GRCh37’ failed
+  download of package ‘phastCons100way.UCSC.hg19’ failed
 
 
 ```
@@ -2391,23 +2003,23 @@ Error in download.file(url, destfile, method, mode = "wb", ...) :
   download from 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz' failed
 In addition: Warning messages:
 1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 165567252 != reported length 710245413
+  downloaded length 216755517 != reported length 710245413
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 165567252 != reported length 710245413
+  downloaded length 216755517 != reported length 710245413
 3: In download.file(url, destfile, method, mode = "wb", ...) :
   URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz': Timeout of 60 seconds was reached
 4: In download.file(url, destfile, method, mode = "wb", ...) :
 ...
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 406535502 != reported length 913353230
+  downloaded length 267506795 != reported length 1050647519
 3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/SNPlocs.Hsapiens.dbSNP144.GRCh37_0.99.20.tar.gz': Timeout of 60 seconds was reached
+  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/phastCons100way.UCSC.hg19_3.7.2.tar.gz': Timeout of 60 seconds was reached
 4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/SNPlocs.Hsapiens.dbSNP144.GRCh37_0.99.20.tar.gz': Timeout of 60 seconds was reached
+  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/phastCons100way.UCSC.hg19_3.7.2.tar.gz': Timeout of 60 seconds was reached
 Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘SNPlocs.Hsapiens.dbSNP144.GRCh37’ failed
+  download of package ‘phastCons100way.UCSC.hg19’ failed
 Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘SNPlocs.Hsapiens.dbSNP144.GRCh37’ failed
+  download of package ‘phastCons100way.UCSC.hg19’ failed
 
 
 ```
@@ -2529,21 +2141,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/bioc/src/contrib/rhdf5filters_1.3.5.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 50680 != reported length 856617
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 50680 != reported length 856617
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/rhdf5filters_1.3.5.tar.gz': Timeout of 60 seconds was reached
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/rhdf5filters_1.3.5.tar.gz': Timeout of 60 seconds was reached
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘rhdf5filters’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘rhdf5filters’ failed
+
 
 
 ```
@@ -2553,21 +2151,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/bioc/src/contrib/rhdf5filters_1.3.5.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 50680 != reported length 856617
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 50680 != reported length 856617
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/rhdf5filters_1.3.5.tar.gz': Timeout of 60 seconds was reached
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/rhdf5filters_1.3.5.tar.gz': Timeout of 60 seconds was reached
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘rhdf5filters’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘rhdf5filters’ failed
+
 
 
 ```
@@ -2670,6 +2254,39 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 ```
+# idiogramFISH
+
+<details>
+
+* Version: 
+* GitHub: https://github.com/Bioconductor/BiocManager
+* Source code: NA
+* Number of recursive dependencies: 0
+
+</details>
+
+## Error before installation
+
+### Devel
+
+```
+
+
+
+
+
+
+```
+### CRAN
+
+```
+
+
+
+
+
+
+```
 # InPAS
 
 <details>
@@ -2693,23 +2310,17 @@ Error in download.file(url, destfile, method, mode = "wb", ...) :
   download from 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz' failed
 In addition: Warning messages:
 1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 611052261 != reported length 710245413
+  downloaded length 347987965 != reported length 710245413
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 611052261 != reported length 710245413
+  downloaded length 347987965 != reported length 710245413
 3: In download.file(url, destfile, method, mode = "wb", ...) :
   URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz': Timeout of 60 seconds was reached
 4: In download.file(url, destfile, method, mode = "wb", ...) :
-...
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 17675759 != reported length 78178992
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/EnsDb.Hsapiens.v86_2.99.0.tar.gz': Timeout of 60 seconds was reached
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/EnsDb.Hsapiens.v86_2.99.0.tar.gz': Timeout of 60 seconds was reached
+  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz': Timeout of 60 seconds was reached
 Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘EnsDb.Hsapiens.v86’ failed
+  download of package ‘BSgenome.Hsapiens.UCSC.hg19’ failed
 Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘EnsDb.Hsapiens.v86’ failed
+  download of package ‘BSgenome.Hsapiens.UCSC.hg19’ failed
 
 
 ```
@@ -2723,23 +2334,17 @@ Error in download.file(url, destfile, method, mode = "wb", ...) :
   download from 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz' failed
 In addition: Warning messages:
 1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 611052261 != reported length 710245413
+  downloaded length 347987965 != reported length 710245413
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 611052261 != reported length 710245413
+  downloaded length 347987965 != reported length 710245413
 3: In download.file(url, destfile, method, mode = "wb", ...) :
   URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz': Timeout of 60 seconds was reached
 4: In download.file(url, destfile, method, mode = "wb", ...) :
-...
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 17675759 != reported length 78178992
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/EnsDb.Hsapiens.v86_2.99.0.tar.gz': Timeout of 60 seconds was reached
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/EnsDb.Hsapiens.v86_2.99.0.tar.gz': Timeout of 60 seconds was reached
+  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz': Timeout of 60 seconds was reached
 Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘EnsDb.Hsapiens.v86’ failed
+  download of package ‘BSgenome.Hsapiens.UCSC.hg19’ failed
 Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘EnsDb.Hsapiens.v86’ failed
+  download of package ‘BSgenome.Hsapiens.UCSC.hg19’ failed
 
 
 ```
@@ -2861,21 +2466,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/data/experiment/src/contrib/RnBeads.hg19_1.23.0.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 13958044 != reported length 104966676
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 13958044 != reported length 104966676
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/experiment/src/contrib/RnBeads.hg19_1.23.0.tar.gz': Timeout of 60 seconds was reached
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/experiment/src/contrib/RnBeads.hg19_1.23.0.tar.gz': Timeout of 60 seconds was reached
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘RnBeads.hg19’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘RnBeads.hg19’ failed
+
 
 
 ```
@@ -2885,21 +2476,40 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/data/experiment/src/contrib/RnBeads.hg19_1.23.0.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 13958044 != reported length 104966676
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 13958044 != reported length 104966676
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/experiment/src/contrib/RnBeads.hg19_1.23.0.tar.gz': Timeout of 60 seconds was reached
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/experiment/src/contrib/RnBeads.hg19_1.23.0.tar.gz': Timeout of 60 seconds was reached
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘RnBeads.hg19’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘RnBeads.hg19’ failed
+
+
+
+```
+# magmaR
+
+<details>
+
+* Version: 
+* GitHub: https://github.com/Bioconductor/BiocManager
+* Source code: NA
+* Number of recursive dependencies: 0
+
+</details>
+
+## Error before installation
+
+### Devel
+
+```
+
+
+
+
+
+
+```
+### CRAN
+
+```
+
+
+
+
 
 
 ```
@@ -2922,21 +2532,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/bioc/src/contrib/Rhdf5lib_1.13.7.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 2638980 != reported length 9990906
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 2638980 != reported length 9990906
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/Rhdf5lib_1.13.7.tar.gz': Timeout of 60 seconds was reached
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/Rhdf5lib_1.13.7.tar.gz': Timeout of 60 seconds was reached
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘Rhdf5lib’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘Rhdf5lib’ failed
+
 
 
 ```
@@ -2946,21 +2542,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/bioc/src/contrib/Rhdf5lib_1.13.7.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 2638980 != reported length 9990906
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 2638980 != reported length 9990906
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/Rhdf5lib_1.13.7.tar.gz': Timeout of 60 seconds was reached
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/Rhdf5lib_1.13.7.tar.gz': Timeout of 60 seconds was reached
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘Rhdf5lib’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘Rhdf5lib’ failed
+
 
 
 ```
@@ -3152,23 +2734,23 @@ Error in download.file(url, destfile, method, mode = "wb", ...) :
   download from 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz' failed
 In addition: Warning messages:
 1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 310613068 != reported length 710245413
+  downloaded length 573278502 != reported length 710245413
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 310613068 != reported length 710245413
+  downloaded length 573278502 != reported length 710245413
 3: In download.file(url, destfile, method, mode = "wb", ...) :
   URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz': Timeout of 60 seconds was reached
 4: In download.file(url, destfile, method, mode = "wb", ...) :
 ...
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 73594800 != reported length 83002050
+  downloaded length 403769842 != reported length 629306686
 3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/org.Hs.eg.db_3.13.0.tar.gz': Timeout of 60 seconds was reached
+  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Mmusculus.UCSC.mm10_1.4.0.tar.gz': Timeout of 60 seconds was reached
 4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/org.Hs.eg.db_3.13.0.tar.gz': Timeout of 60 seconds was reached
+  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Mmusculus.UCSC.mm10_1.4.0.tar.gz': Timeout of 60 seconds was reached
 Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘org.Hs.eg.db’ failed
+  download of package ‘BSgenome.Mmusculus.UCSC.mm10’ failed
 Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘org.Hs.eg.db’ failed
+  download of package ‘BSgenome.Mmusculus.UCSC.mm10’ failed
 
 
 ```
@@ -3182,23 +2764,23 @@ Error in download.file(url, destfile, method, mode = "wb", ...) :
   download from 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz' failed
 In addition: Warning messages:
 1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 310613068 != reported length 710245413
+  downloaded length 573278502 != reported length 710245413
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 310613068 != reported length 710245413
+  downloaded length 573278502 != reported length 710245413
 3: In download.file(url, destfile, method, mode = "wb", ...) :
   URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz': Timeout of 60 seconds was reached
 4: In download.file(url, destfile, method, mode = "wb", ...) :
 ...
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 73594800 != reported length 83002050
+  downloaded length 403769842 != reported length 629306686
 3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/org.Hs.eg.db_3.13.0.tar.gz': Timeout of 60 seconds was reached
+  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Mmusculus.UCSC.mm10_1.4.0.tar.gz': Timeout of 60 seconds was reached
 4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/org.Hs.eg.db_3.13.0.tar.gz': Timeout of 60 seconds was reached
+  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Mmusculus.UCSC.mm10_1.4.0.tar.gz': Timeout of 60 seconds was reached
 Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘org.Hs.eg.db’ failed
+  download of package ‘BSgenome.Mmusculus.UCSC.mm10’ failed
 Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘org.Hs.eg.db’ failed
+  download of package ‘BSgenome.Mmusculus.UCSC.mm10’ failed
 
 
 ```
@@ -3254,21 +2836,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Mmusculus.UCSC.mm10_1.4.0.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 363183144 != reported length 629306686
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 363183144 != reported length 629306686
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Mmusculus.UCSC.mm10_1.4.0.tar.gz': Timeout of 60 seconds was reached
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Mmusculus.UCSC.mm10_1.4.0.tar.gz': Timeout of 60 seconds was reached
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘BSgenome.Mmusculus.UCSC.mm10’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘BSgenome.Mmusculus.UCSC.mm10’ failed
+
 
 
 ```
@@ -3278,21 +2846,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Mmusculus.UCSC.mm10_1.4.0.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 363183144 != reported length 629306686
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 363183144 != reported length 629306686
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Mmusculus.UCSC.mm10_1.4.0.tar.gz': Timeout of 60 seconds was reached
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Mmusculus.UCSC.mm10_1.4.0.tar.gz': Timeout of 60 seconds was reached
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘BSgenome.Mmusculus.UCSC.mm10’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘BSgenome.Mmusculus.UCSC.mm10’ failed
+
 
 
 ```
@@ -3385,23 +2939,23 @@ Error in download.file(url, destfile, method, mode = "wb", ...) :
   download from 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg18_1.3.1000.tar.gz' failed
 In addition: Warning messages:
 1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 417685474 != reported length 810802173
+  downloaded length 341997627 != reported length 810802173
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 417685474 != reported length 810802173
+  downloaded length 341997627 != reported length 810802173
 3: In download.file(url, destfile, method, mode = "wb", ...) :
   URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg18_1.3.1000.tar.gz': Timeout of 60 seconds was reached
 4: In download.file(url, destfile, method, mode = "wb", ...) :
 ...
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 220050864 != reported length 358969969
+  downloaded length 556731194 != reported length 642701103
 3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/pd.mapping250k.sty_3.12.0.tar.gz': Timeout of 60 seconds was reached
+  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/pd.genomewidesnp.6_3.14.1.tar.gz': Timeout of 60 seconds was reached
 4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/pd.mapping250k.sty_3.12.0.tar.gz': Timeout of 60 seconds was reached
+  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/pd.genomewidesnp.6_3.14.1.tar.gz': Timeout of 60 seconds was reached
 Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘pd.mapping250k.sty’ failed
+  download of package ‘pd.genomewidesnp.6’ failed
 Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘pd.mapping250k.sty’ failed
+  download of package ‘pd.genomewidesnp.6’ failed
 
 
 ```
@@ -3415,23 +2969,23 @@ Error in download.file(url, destfile, method, mode = "wb", ...) :
   download from 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg18_1.3.1000.tar.gz' failed
 In addition: Warning messages:
 1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 417685474 != reported length 810802173
+  downloaded length 341997627 != reported length 810802173
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 417685474 != reported length 810802173
+  downloaded length 341997627 != reported length 810802173
 3: In download.file(url, destfile, method, mode = "wb", ...) :
   URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg18_1.3.1000.tar.gz': Timeout of 60 seconds was reached
 4: In download.file(url, destfile, method, mode = "wb", ...) :
 ...
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 220050864 != reported length 358969969
+  downloaded length 556731194 != reported length 642701103
 3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/pd.mapping250k.sty_3.12.0.tar.gz': Timeout of 60 seconds was reached
+  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/pd.genomewidesnp.6_3.14.1.tar.gz': Timeout of 60 seconds was reached
 4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/pd.mapping250k.sty_3.12.0.tar.gz': Timeout of 60 seconds was reached
+  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/pd.genomewidesnp.6_3.14.1.tar.gz': Timeout of 60 seconds was reached
 Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘pd.mapping250k.sty’ failed
+  download of package ‘pd.genomewidesnp.6’ failed
 Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘pd.mapping250k.sty’ failed
+  download of package ‘pd.genomewidesnp.6’ failed
 
 
 ```
@@ -3491,9 +3045,9 @@ Error in download.file(url, destfile, method, mode = "wb", ...) :
   download from 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz' failed
 In addition: Warning messages:
 1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 311870892 != reported length 710245413
+  downloaded length 174188829 != reported length 710245413
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 311870892 != reported length 710245413
+  downloaded length 174188829 != reported length 710245413
 3: In download.file(url, destfile, method, mode = "wb", ...) :
   URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz': Timeout of 60 seconds was reached
 4: In download.file(url, destfile, method, mode = "wb", ...) :
@@ -3515,9 +3069,9 @@ Error in download.file(url, destfile, method, mode = "wb", ...) :
   download from 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz' failed
 In addition: Warning messages:
 1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 311870892 != reported length 710245413
+  downloaded length 174188829 != reported length 710245413
 2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 311870892 != reported length 710245413
+  downloaded length 174188829 != reported length 710245413
 3: In download.file(url, destfile, method, mode = "wb", ...) :
   URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz': Timeout of 60 seconds was reached
 4: In download.file(url, destfile, method, mode = "wb", ...) :
@@ -3776,21 +3330,7 @@ Run `revdep_details(, "pkgDepTools")` for more info
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/bioc/src/contrib/rtracklayer_1.51.5.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 3731208 != reported length 4055380
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 3731208 != reported length 4055380
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/rtracklayer_1.51.5.tar.gz': Timeout of 60 seconds was reached
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/rtracklayer_1.51.5.tar.gz': Timeout of 60 seconds was reached
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘rtracklayer’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘rtracklayer’ failed
+
 
 
 ```
@@ -3800,21 +3340,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/bioc/src/contrib/rtracklayer_1.51.5.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 3731208 != reported length 4055380
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 3731208 != reported length 4055380
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/rtracklayer_1.51.5.tar.gz': Timeout of 60 seconds was reached
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/rtracklayer_1.51.5.tar.gz': Timeout of 60 seconds was reached
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘rtracklayer’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘rtracklayer’ failed
+
 
 
 ```
@@ -4247,39 +3773,6 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 ```
-# RNAseqData.HNRNPC.bam.chr14
-
-<details>
-
-* Version: 
-* GitHub: https://github.com/Bioconductor/BiocManager
-* Source code: NA
-* Number of recursive dependencies: 0
-
-</details>
-
-## Error before installation
-
-### Devel
-
-```
-
-
-
-
-
-
-```
-### CRAN
-
-```
-
-
-
-
-
-
-```
 # scTensor
 
 <details>
@@ -4299,21 +3792,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/reactome.db_1.76.0.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 260331306 != reported length 417224954
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 260331306 != reported length 417224954
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/reactome.db_1.76.0.tar.gz': status was 'Failure when receiving data from the peer'
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/reactome.db_1.76.0.tar.gz': status was 'Failure when receiving data from the peer'
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘reactome.db’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘reactome.db’ failed
+
 
 
 ```
@@ -4323,21 +3802,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/reactome.db_1.76.0.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 260331306 != reported length 417224954
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 260331306 != reported length 417224954
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/reactome.db_1.76.0.tar.gz': status was 'Failure when receiving data from the peer'
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/reactome.db_1.76.0.tar.gz': status was 'Failure when receiving data from the peer'
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘reactome.db’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘reactome.db’ failed
+
 
 
 ```
@@ -4507,6 +3972,39 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 ```
 # snapcount
+
+<details>
+
+* Version: 
+* GitHub: https://github.com/Bioconductor/BiocManager
+* Source code: NA
+* Number of recursive dependencies: 0
+
+</details>
+
+## Error before installation
+
+### Devel
+
+```
+
+
+
+
+
+
+```
+### CRAN
+
+```
+
+
+
+
+
+
+```
+# specmine.datasets
 
 <details>
 
@@ -4723,21 +4221,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/data/experiment/src/contrib/systemPipeRdata_1.19.11.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 214400351 != reported length 272847973
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 214400351 != reported length 272847973
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/experiment/src/contrib/systemPipeRdata_1.19.11.tar.gz': status was 'Failure when receiving data from the peer'
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/experiment/src/contrib/systemPipeRdata_1.19.11.tar.gz': status was 'Failure when receiving data from the peer'
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘systemPipeRdata’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘systemPipeRdata’ failed
+
 
 
 ```
@@ -4747,21 +4231,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  download from 'https://bioconductor.org/packages/3.13/data/experiment/src/contrib/systemPipeRdata_1.19.11.tar.gz' failed
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 214400351 != reported length 272847973
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  downloaded length 214400351 != reported length 272847973
-3: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/experiment/src/contrib/systemPipeRdata_1.19.11.tar.gz': status was 'Failure when receiving data from the peer'
-4: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/experiment/src/contrib/systemPipeRdata_1.19.11.tar.gz': status was 'Failure when receiving data from the peer'
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘systemPipeRdata’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘systemPipeRdata’ failed
+
 
 
 ```
@@ -4850,17 +4320,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  cannot open URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/GO.db_3.13.0.tar.gz'
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/GO.db_3.13.0.tar.gz': status was 'SSL connect error'
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/GO.db_3.13.0.tar.gz': status was 'SSL connect error'
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘GO.db’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘GO.db’ failed
+
 
 
 ```
@@ -4870,17 +4330,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  cannot open URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/GO.db_3.13.0.tar.gz'
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/GO.db_3.13.0.tar.gz': status was 'SSL connect error'
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/data/annotation/src/contrib/GO.db_3.13.0.tar.gz': status was 'SSL connect error'
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘GO.db’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘GO.db’ failed
+
 
 
 ```
@@ -4936,17 +4386,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  cannot open URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/sparseMatrixStats_1.3.8.tar.gz'
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/sparseMatrixStats_1.3.8.tar.gz': Timeout of 60 seconds was reached
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/sparseMatrixStats_1.3.8.tar.gz': Timeout of 60 seconds was reached
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘sparseMatrixStats’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘sparseMatrixStats’ failed
+
 
 
 ```
@@ -4956,17 +4396,7 @@ Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
 
 
 
-Error in download.file(url, destfile, method, mode = "wb", ...) : 
-  cannot open URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/sparseMatrixStats_1.3.8.tar.gz'
-In addition: Warning messages:
-1: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/sparseMatrixStats_1.3.8.tar.gz': Timeout of 60 seconds was reached
-2: In download.file(url, destfile, method, mode = "wb", ...) :
-  URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/sparseMatrixStats_1.3.8.tar.gz': Timeout of 60 seconds was reached
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘sparseMatrixStats’ failed
-Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
-  download of package ‘sparseMatrixStats’ failed
+
 
 
 ```

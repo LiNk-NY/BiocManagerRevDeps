@@ -24,7 +24,6 @@
 
 |package                     |version |error |warning |note |
 |:---------------------------|:-------|:-----|:-------|:----|
-|affylmGUI                   |?       |      |        |     |
 |annaffy                     |?       |      |        |     |
 |AnnotationForge             |?       |      |        |     |
 |AnnotationHub               |?       |      |        |     |
@@ -34,7 +33,7 @@
 |anyLib                      |?       |      |        |     |
 |autonomics                  |?       |      |        |     |
 |available                   |?       |      |        |     |
-|bbl                         |?       |      |        |     |
+|bbl                         |0.4.0   |1     |        |     |
 |BiocCheck                   |?       |      |        |     |
 |BiocPkgTools                |?       |      |        |     |
 |biocthis                    |?       |      |        |     |
@@ -59,7 +58,7 @@
 |DESeq2                      |?       |      |        |     |
 |devtools                    |?       |      |        |     |
 |discourseGT                 |?       |      |        |     |
-|DMRScan                     |?       |      |        |     |
+|DMRScan                     |1.13.0  |1     |1       |1    |
 |EDASeq                      |?       |      |        |     |
 |EnrichmentBrowser           |?       |      |        |     |
 |esATAC                      |?       |      |        |     |
@@ -71,7 +70,6 @@
 |fcoex                       |?       |      |        |     |
 |FGNet                       |?       |      |        |     |
 |FieldEffectCrc              |?       |      |        |     |
-|gcrma                       |?       |      |        |     |
 |GCSscore                    |?       |      |        |     |
 |GDSArray                    |?       |      |        |     |
 |genBaRcode                  |?       |      |        |     |
@@ -83,11 +81,13 @@
 |HMP2Data                    |?       |      |        |     |
 |HPAStainR                   |?       |      |        |     |
 |ibawds                      |?       |      |        |     |
+|idiogramFISH                |?       |      |        |     |
 |InPAS                       |?       |      |        |     |
 |InteractiveComplexHeatmap   |?       |      |        |     |
 |KEGGlincs                   |?       |      |        |     |
 |lipidomeR                   |?       |      |        |     |
 |MAGAR                       |?       |      |        |     |
+|magmaR                      |?       |      |        |     |
 |maGUI                       |?       |      |        |     |
 |mdp                         |?       |      |        |     |
 |metacoder                   |?       |      |        |     |
@@ -122,7 +122,6 @@
 |regionReport                |?       |      |        |     |
 |renv                        |?       |      |        |     |
 |RforProteomics              |?       |      |        |     |
-|RNAseqData.HNRNPC.bam.chr14 |?       |      |        |     |
 |scTensor                    |?       |      |        |     |
 |seqCAT                      |?       |      |        |     |
 |SeqGate                     |?       |      |        |     |
@@ -130,6 +129,7 @@
 |simplifyEnrichment          |?       |      |        |     |
 |SingleCellSignalR           |?       |      |        |     |
 |snapcount                   |?       |      |        |     |
+|specmine.datasets           |?       |      |        |     |
 |SpectralTAD                 |?       |      |        |     |
 |splatter                    |?       |      |        |     |
 |srnadiff                    |?       |      |        |     |
