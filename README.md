@@ -10,13 +10,13 @@
 |collate  |en_US.UTF-8                              |
 |ctype    |en_US.UTF-8                              |
 |tz       |America/New_York                         |
-|date     |2021-05-09                               |
+|date     |2021-05-10                               |
 
 # Dependencies
 
-|package     |old     |new       |Δ  |
-|:-----------|:-------|:---------|:--|
-|BiocManager |1.30.12 |1.30.13.3 |*  |
+|package     |old     |new     |Δ  |
+|:-----------|:-------|:-------|:--|
+|BiocManager |1.30.13 |1.30.15 |*  |
 
 # Revdeps
 
