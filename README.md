@@ -10,30 +10,30 @@
 |collate  |en_US.UTF-8                              |
 |ctype    |en_US.UTF-8                              |
 |tz       |America/New_York                         |
-|date     |2021-05-10                               |
+|date     |2021-06-15                               |
 
 # Dependencies
 
-|package     |old     |new     |Δ  |
-|:-----------|:-------|:-------|:--|
-|BiocManager |1.30.13 |1.30.15 |*  |
+|package     |old     |new       |Δ  |
+|:-----------|:-------|:---------|:--|
+|BiocManager |1.30.15 |1.30.15.4 |*  |
 
 # Revdeps
 
-## Failed to check (123)
+## Failed to check (127)
 
 |package                     |version |error |warning |note |
 |:---------------------------|:-------|:-----|:-------|:----|
+|affylmGUI                   |?       |      |        |     |
 |annaffy                     |?       |      |        |     |
 |AnnotationForge             |?       |      |        |     |
 |AnnotationHub               |?       |      |        |     |
 |AnnotationHubData           |?       |      |        |     |
 |AnVIL                       |?       |      |        |     |
-|AnVILPublish                |1.1.2   |1     |1       |     |
 |anyLib                      |?       |      |        |     |
 |autonomics                  |?       |      |        |     |
 |available                   |?       |      |        |     |
-|bbl                         |0.4.0   |1     |        |     |
+|bbl                         |?       |      |        |     |
 |BiocCheck                   |?       |      |        |     |
 |BiocPkgTools                |?       |      |        |     |
 |biocthis                    |?       |      |        |     |
@@ -53,12 +53,12 @@
 |crisprseekplus              |?       |      |        |     |
 |crossmeta                   |?       |      |        |     |
 |csaw                        |?       |      |        |     |
-|curatedMetagenomicData      |?       |      |        |     |
 |dearseq                     |?       |      |        |     |
+|deepdep                     |?       |      |        |     |
 |DESeq2                      |?       |      |        |     |
 |devtools                    |?       |      |        |     |
 |discourseGT                 |?       |      |        |     |
-|DMRScan                     |1.13.0  |1     |1       |1    |
+|DMRScan                     |?       |      |        |     |
 |EDASeq                      |?       |      |        |     |
 |EnrichmentBrowser           |?       |      |        |     |
 |esATAC                      |?       |      |        |     |
@@ -70,24 +70,26 @@
 |fcoex                       |?       |      |        |     |
 |FGNet                       |?       |      |        |     |
 |FieldEffectCrc              |?       |      |        |     |
+|gcrma                       |?       |      |        |     |
 |GCSscore                    |?       |      |        |     |
 |GDSArray                    |?       |      |        |     |
 |genBaRcode                  |?       |      |        |     |
 |GenomicScores               |?       |      |        |     |
+|GenomicSuperSignature       |?       |      |        |     |
 |gmoviz                      |?       |      |        |     |
 |GOSemSim                    |?       |      |        |     |
 |GOTHiC                      |?       |      |        |     |
 |HMP16SData                  |?       |      |        |     |
 |HMP2Data                    |?       |      |        |     |
 |HPAStainR                   |?       |      |        |     |
+|HubPub                      |?       |      |        |     |
 |ibawds                      |?       |      |        |     |
-|idiogramFISH                |?       |      |        |     |
+|IDSL.IPA                    |?       |      |        |     |
 |InPAS                       |?       |      |        |     |
 |InteractiveComplexHeatmap   |?       |      |        |     |
 |KEGGlincs                   |?       |      |        |     |
 |lipidomeR                   |?       |      |        |     |
 |MAGAR                       |?       |      |        |     |
-|magmaR                      |?       |      |        |     |
 |maGUI                       |?       |      |        |     |
 |mdp                         |?       |      |        |     |
 |metacoder                   |?       |      |        |     |
@@ -104,7 +106,7 @@
 |OrganismDbi                 |?       |      |        |     |
 |PCMBase                     |?       |      |        |     |
 |pipeFrame                   |?       |      |        |     |
-|pkgDepTools                 |1.57.0  |1     |        |3    |
+|pkgDepTools                 |1.58.0  |1     |        |3    |
 |pkggraph                    |?       |      |        |     |
 |preciseTAD                  |?       |      |        |     |
 |Prostar                     |?       |      |        |     |
@@ -122,6 +124,8 @@
 |regionReport                |?       |      |        |     |
 |renv                        |?       |      |        |     |
 |RforProteomics              |?       |      |        |     |
+|riskmetric                  |?       |      |        |     |
+|RNAseqData.HNRNPC.bam.chr14 |?       |      |        |     |
 |scTensor                    |?       |      |        |     |
 |seqCAT                      |?       |      |        |     |
 |SeqGate                     |?       |      |        |     |
@@ -129,7 +133,7 @@
 |simplifyEnrichment          |?       |      |        |     |
 |SingleCellSignalR           |?       |      |        |     |
 |snapcount                   |?       |      |        |     |
-|specmine.datasets           |?       |      |        |     |
+|spatialLIBD                 |?       |      |        |     |
 |SpectralTAD                 |?       |      |        |     |
 |splatter                    |?       |      |        |     |
 |srnadiff                    |?       |      |        |     |
