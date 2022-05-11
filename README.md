@@ -1,35 +1,39 @@
 # Platform
 
-|field    |value                                    |
-|:--------|:----------------------------------------|
-|version  |R version 4.1.0 beta (2021-05-06 r80268) |
-|os       |Ubuntu 20.04.2 LTS                       |
-|system   |x86_64, linux-gnu                        |
-|ui       |X11                                      |
-|language |(EN)                                     |
-|collate  |en_US.UTF-8                              |
-|ctype    |en_US.UTF-8                              |
-|tz       |America/New_York                         |
-|date     |2021-06-15                               |
+|field    |value                                       |
+|:--------|:-------------------------------------------|
+|version  |R version 4.2.0 Patched (2022-05-11 r82344) |
+|os       |Ubuntu 20.04.4 LTS                          |
+|system   |x86_64, linux-gnu                           |
+|ui       |X11                                         |
+|language |(EN)                                        |
+|collate  |en_US.UTF-8                                 |
+|ctype    |en_US.UTF-8                                 |
+|tz       |America/New_York                            |
+|date     |2022-05-11                                  |
+|pandoc   |2.14.0.2 @ /usr/bin/pandoc                  |
 
 # Dependencies
 
 |package     |old     |new       |Δ  |
 |:-----------|:-------|:---------|:--|
-|BiocManager |1.30.15 |1.30.15.4 |*  |
+|BiocManager |1.30.17 |1.30.17.1 |*  |
 
 # Revdeps
 
-## Failed to check (127)
+## Failed to check (150)
 
 |package                     |version |error |warning |note |
 |:---------------------------|:-------|:-----|:-------|:----|
+|affy                        |1.75.0  |1     |1       |1    |
 |affylmGUI                   |?       |      |        |     |
+|alevinQC                    |?       |      |        |     |
 |annaffy                     |?       |      |        |     |
 |AnnotationForge             |?       |      |        |     |
 |AnnotationHub               |?       |      |        |     |
 |AnnotationHubData           |?       |      |        |     |
 |AnVIL                       |?       |      |        |     |
+|AnVILPublish                |?       |      |        |     |
 |anyLib                      |?       |      |        |     |
 |autonomics                  |?       |      |        |     |
 |available                   |?       |      |        |     |
@@ -38,6 +42,8 @@
 |BiocPkgTools                |?       |      |        |     |
 |biocthis                    |?       |      |        |     |
 |BSgenome                    |?       |      |        |     |
+|bulkAnalyseR                |?       |      |        |     |
+|CALANGO                     |?       |      |        |     |
 |ccmap                       |?       |      |        |     |
 |celda                       |?       |      |        |     |
 |cellmigRation               |?       |      |        |     |
@@ -49,6 +55,7 @@
 |circRNAprofiler             |?       |      |        |     |
 |clustifyr                   |?       |      |        |     |
 |CNVScope                    |?       |      |        |     |
+|Cogito                      |?       |      |        |     |
 |cola                        |?       |      |        |     |
 |crisprseekplus              |?       |      |        |     |
 |crossmeta                   |?       |      |        |     |
@@ -65,6 +72,7 @@
 |EuPathDB                    |?       |      |        |     |
 |ExperimentHub               |?       |      |        |     |
 |ExperimentHubData           |?       |      |        |     |
+|ExpImage                    |?       |      |        |     |
 |famat                       |?       |      |        |     |
 |FCBF                        |?       |      |        |     |
 |fcoex                       |?       |      |        |     |
@@ -74,22 +82,27 @@
 |GCSscore                    |?       |      |        |     |
 |GDSArray                    |?       |      |        |     |
 |genBaRcode                  |?       |      |        |     |
+|geneExpressionFromGEO       |?       |      |        |     |
+|genekitr                    |?       |      |        |     |
 |GenomicScores               |?       |      |        |     |
 |GenomicSuperSignature       |?       |      |        |     |
 |gmoviz                      |?       |      |        |     |
 |GOSemSim                    |?       |      |        |     |
 |GOTHiC                      |?       |      |        |     |
+|GRaNIE                      |?       |      |        |     |
+|gRbase                      |?       |      |        |     |
 |HMP16SData                  |?       |      |        |     |
 |HMP2Data                    |?       |      |        |     |
 |HPAStainR                   |?       |      |        |     |
 |HubPub                      |?       |      |        |     |
 |ibawds                      |?       |      |        |     |
-|IDSL.IPA                    |?       |      |        |     |
 |InPAS                       |?       |      |        |     |
 |InteractiveComplexHeatmap   |?       |      |        |     |
 |KEGGlincs                   |?       |      |        |     |
+|librarian                   |?       |      |        |     |
 |lipidomeR                   |?       |      |        |     |
 |MAGAR                       |?       |      |        |     |
+|MAGeCKFlute                 |?       |      |        |     |
 |maGUI                       |?       |      |        |     |
 |mdp                         |?       |      |        |     |
 |metacoder                   |?       |      |        |     |
@@ -104,17 +117,18 @@
 |oligoClasses                |?       |      |        |     |
 |OmicsLonDA                  |?       |      |        |     |
 |OrganismDbi                 |?       |      |        |     |
+|OSCA.intro                  |?       |      |        |     |
+|OSCA.workflows              |?       |      |        |     |
 |PCMBase                     |?       |      |        |     |
 |pipeFrame                   |?       |      |        |     |
-|pkgDepTools                 |1.58.0  |1     |        |3    |
+|pkgDepTools                 |1.62.0  |1     |        |3    |
 |pkggraph                    |?       |      |        |     |
+|pkgndep                     |?       |      |        |     |
 |preciseTAD                  |?       |      |        |     |
 |Prostar                     |?       |      |        |     |
-|ProteomicsAnnotationHubData |?       |      |        |     |
 |PubScore                    |?       |      |        |     |
 |pwrEWAS                     |?       |      |        |     |
 |qsea                        |?       |      |        |     |
-|QuasR                       |?       |      |        |     |
 |RAMClustR                   |?       |      |        |     |
 |RcmdrPlugin.BiclustGUI      |?       |      |        |     |
 |rebook                      |?       |      |        |     |
@@ -124,8 +138,12 @@
 |regionReport                |?       |      |        |     |
 |renv                        |?       |      |        |     |
 |RforProteomics              |?       |      |        |     |
+|rGenomeTracksData           |?       |      |        |     |
+|rgoslin                     |?       |      |        |     |
 |riskmetric                  |?       |      |        |     |
+|rmspc                       |?       |      |        |     |
 |RNAseqData.HNRNPC.bam.chr14 |?       |      |        |     |
+|SCRIP                       |?       |      |        |     |
 |scTensor                    |?       |      |        |     |
 |seqCAT                      |?       |      |        |     |
 |SeqGate                     |?       |      |        |     |
@@ -134,19 +152,25 @@
 |SingleCellSignalR           |?       |      |        |     |
 |snapcount                   |?       |      |        |     |
 |spatialLIBD                 |?       |      |        |     |
+|spatzie                     |?       |      |        |     |
 |SpectralTAD                 |?       |      |        |     |
+|spiky                       |?       |      |        |     |
 |splatter                    |?       |      |        |     |
 |srnadiff                    |?       |      |        |     |
+|sSNAPPY                     |?       |      |        |     |
 |survcomp                    |?       |      |        |     |
 |SynMut                      |?       |      |        |     |
-|systemPipeR                 |?       |      |        |     |
 |TarSeqQC                    |?       |      |        |     |
 |TcGSA                       |?       |      |        |     |
 |tidybulk                    |?       |      |        |     |
 |tidyHeatmap                 |?       |      |        |     |
 |tigre                       |?       |      |        |     |
 |TimiRGeN                    |?       |      |        |     |
+|tinyarray                   |?       |      |        |     |
 |TnT                         |?       |      |        |     |
+|TransView                   |1.40.0  |1     |        |     |
+|tripr                       |?       |      |        |     |
+|umiAnalyzer                 |?       |      |        |     |
 |VCFArray                    |?       |      |        |     |
 |ViSEAGO                     |?       |      |        |     |
 |webbioc                     |?       |      |        |     |
